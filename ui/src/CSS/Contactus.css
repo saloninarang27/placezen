@@ -1,0 +1,61 @@
+
+
+/* Main Content Styles */
+#contact-main {
+  padding: 20px;
+  margin-left: 27%; /* Adjust as needed based on sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+#contact-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Table Styles */
+#contact-table-wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+#contact-info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#contact-info-table th, #contact-info-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#contact-info-table th {
+  background-color: #f4f4f9;
+}
+
+/* Responsive Design for Screens 768px and smaller */
+@media (max-width: 768px) {
+  #contact-main {
+      margin-left: 0; /* Ensure no margin on small screens */
+      padding: 10px;
+  }
+
+  #contact-table-wrapper {
+      padding: 5px;
+  }
+}
+
+/* Additional Responsive Design for Smaller Screens (Mobile) */
+@media (max-width: 480px) {
+  #contact-main {
+      padding: 5px;
+      margin-left: 0%;
+      margin-right: 5%;
+  }
+
+  #contact-info-table {
+      font-size: 14px;
+  }
+}

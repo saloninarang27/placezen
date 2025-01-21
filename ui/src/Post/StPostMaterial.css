@@ -1,0 +1,101 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  /* Content Styles */
+  .material-main-content {
+    padding: 20px;
+    margin-left: 250px;
+    margin-right: 20px;
+    transition: margin-left 0.3s ease, margin-right 0.3s ease;
+  }
+  
+  .material-main-content-with-sidebar {
+    margin-left: 250px;
+  }
+  
+  #material-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  #material-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .material-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .material-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 70%;
+  }
+  
+  .material-textarea {
+    width: 70%;
+    height: 40vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  
+  .material-button {
+    width: 150px;
+    background-color: green;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .material-button:hover {
+    background-color: #2e8b57;
+  }
+  
+  /* Responsive Design for Screens 768px and smaller */
+  @media (max-width: 768px) {
+    .material-main-content {
+      margin-left: 0;
+      margin-right: 10px;
+      padding: 10px;
+    }
+  
+    .material-input,
+    .material-textarea {
+      width: 100%;
+    }
+  }
+  
+  /* Additional Responsive Design for Smaller Screens (Mobile) */
+  @media (max-width: 480px) {
+    .material-main-content {
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 5px;
+    }
+  
+    .material-button {
+      width: 100px;
+      padding: 8px;
+    }
+  }
+  

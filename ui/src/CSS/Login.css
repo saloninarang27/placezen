@@ -1,0 +1,140 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Header Styles */
+#bcd {
+  background-color: crimson;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Main Container */
+#mmm {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Heading Styles */
+h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+#hxx {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+#mmm1 {
+  padding: 20px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#boss {
+  background-color: #004d99;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+#boss a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#boss:hover {
+  background-color: #003366;
+}
+
+span a {
+  color: #004d99;
+  text-decoration: none;
+}
+
+span a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Screens 768px and smaller */
+@media (max-width: 768px) {
+  #mmm {
+      margin: 20px;
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  #hxx {
+      font-size: 18px;
+  }
+
+  input {
+      width: 90%;
+  }
+
+  #boss {
+      width: 100%;
+      font-size: 14px;
+  }
+}
+
+/* Additional Responsive Design for Smaller Screens (Mobile) */
+@media (max-width: 480px) {
+  #mmm {
+      margin: 10px;
+      padding: 5px;
+      margin-top: 25%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  #hxx {
+      font-size: 16px;
+  }
+
+  input {
+      width: 95%;
+  }
+
+  #boss {
+      width: 100%;
+      font-size: 12px;
+  }
+}

@@ -1,0 +1,76 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main Content Styles */
+.main-contennt {
+    /* padding: 20px; */
+    margin-left: 25%; /* Ensure no margin on small screens */
+    transition: margin-left 0.3s ease;
+}
+
+.page-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.table-wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.loading-spinner {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Responsive Design for Screens 768px and smaller */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0; /* Ensure no margin on small screens */
+        padding: 10px;
+    }
+
+    .data-table th, .data-table td {
+        padding: 8px;
+    }
+}
+
+/* Additional Responsive Design for Smaller Screens (Mobile) */
+@media (max-width: 480px) {
+    .main-contennt {
+        /* padding: 5px; */
+        width: 100%;
+        font-size: 0.7rem;
+        /* margin-right: 5%; */
+        margin-left: 0%;
+    }
+
+    .data-table th, .data-table td {
+        padding: 6px;
+    }
+}

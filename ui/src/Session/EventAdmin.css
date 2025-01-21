@@ -1,0 +1,253 @@
+
+
+/* Content Styles */
+.event-main-content {
+  padding: 20px;
+  margin-left: 250px; /* Adjusted sidebar width */
+  margin-right: 20px; /* Right margin for larger screens */
+  transition: margin-left 0.3s ease, margin-right 0.3s ease;
+}
+
+.event-main-content-with-sidebar {
+  margin-left: 250px;
+}
+
+#event-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+#event-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.event-welcome {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+#event-link {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+#event-link:hover {
+  color: #2980b9;
+}
+
+.event-link-text {
+  font-size: 20px;
+}
+
+#event-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #faf5f4;
+  font-weight: bold;
+}
+
+.event-loader {
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #1abc9c;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-card {
+  background-color: #0d2b48;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.event-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e4e8ec;
+}
+
+.event-card h4 {
+  font-size: 13px;
+  margin: 5px 0;
+  color: #e3e7ea;
+}
+
+.event-question {
+  font-variant: small-caps;
+  font-weight: bold;
+  color: #f6f2f2;
+  font-size: larger;
+}
+
+/* Responsive Design for Screens 768px and smaller */
+@media (max-width: 768px) {
+  .event-main-content {
+    margin-left: 0;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .event-card {
+    padding: 15px;
+    max-width: 100%;
+  }
+}
+
+/* Additional Responsive Design for Smaller Screens (Mobile) */
+@media (max-width: 480px) {
+  .event-main-content {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+  .event-card {
+    padding: 8px;
+  }
+}
+.event-card {
+  background: linear-gradient(145deg, #0a1e35, #1e3a5b); /* Gradient background */
+  padding: 20px;
+  margin-bottom: 20px;
+ 
+  border-radius: 12px; /* Softer rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.1); /* Outer and inner shadows */
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* For better clipping of overflowing content */
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25), inset 0 4px 6px rgba(255, 255, 255, 0.15); /* More pronounced hover effect */
+}
+
+/* Heading inside event card */
+.event-card h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+/* Subheading inside event card */
+.event-card h4 {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #d0d6de;
+}
+
+/* Additional highlight styling for questions */
+.event-question {
+  font-variant: small-caps;
+  font-weight: bold;
+  color: #f9c74f; /* A vibrant yellow shade */
+  font-size: larger;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for better contrast */
+}
+
+/* Add decorative elements for visual interest */
+.event-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10px;
+  background: linear-gradient(145deg, #0077b6, #00b4d8); /* Decorative vertical line */
+  border-radius: 12px 0 0 12px;
+}
+
+/* Container for all event cards */
+#event-container {
+  margin-left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f7fa;
+}
+
+/* Individual event card container */
+.event-card-container {
+  background: linear-gradient(145deg, #0a1e35, #1e3a5b); /* Gradient background */
+  padding: 20px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.1); /* Shadow effects */
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff;
+  position: relative; /* For decorative elements */
+}
+
+.event-card-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25), inset 0 4px 6px rgba(255, 255, 255, 0.15);
+}
+
+/* Event card title */
+.event-card-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+/* Event card detail */
+.event-card-detail {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #d0d6de; /* Lighter text color for details */
+}
+
+/* Add a decorative element to the card */
+.event-card-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 8px;
+  background: linear-gradient(145deg, #0077b6, #00b4d8); /* Decorative vertical line */
+  border-radius: 12px 0 0 12px;
+}

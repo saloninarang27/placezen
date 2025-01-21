@@ -1,0 +1,61 @@
+/* Chart Container Styling */
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+    margin-left: 25%;
+    /* background: linear-gradient(135deg, #e3f2fd, #bbdefb); */
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Chart Styling */
+  .chart {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .chart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Bar Chart Specific Styling */
+  #bar-chart-container {
+    height: 400px;
+  }
+  
+  /* Pie Chart Specific Styling */
+  .chart-container .chart:nth-child(2) {
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #2196f3;
+  }
+  
+  /* General Canvas Styling */
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .chart-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .chart {
+      max-width: 90%;
+    }
+  }
+  

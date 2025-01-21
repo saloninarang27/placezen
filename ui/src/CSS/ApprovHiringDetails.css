@@ -1,0 +1,19 @@
+.hmm{
+    /* margin-left: 50%; */
+    position: relative;
+    left: 20%;
+    border-radius: 3%;
+    /* border-top-left-radius: 5%; */
+}
+#devu{
+    margin-left: 35%;
+}
+.devus{
+    /* background-color: rgb(45, 130, 70); */
+    color:crimson;
+    /* border-radius: 4%; */
+    margin-right: 7%;
+    width: 20%;
+
+    /* text-decoration: underline; */
+}

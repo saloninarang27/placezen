@@ -1,0 +1,106 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  /* Content Styles */
+  .admin-content {
+    padding: 20px;
+    margin-left: 250px; /* Adjusted sidebar width */
+    margin-right: 20px; /* Right margin for larger screens */
+    transition: margin-left 0.3s ease, margin-right 0.3s ease;
+  }
+  
+  .admin-content-with-sidebar {
+    margin-left: 250px;
+  }
+  
+  #admin-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .admin-table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 5%;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-table th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+  }
+  
+  .admin-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .loader {
+    margin: auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #1abc9c;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Responsive Design for Screens 768px and smaller */
+  @media (max-width: 768px) {
+    .admin-content {
+      margin-left: 0;
+      margin-right: 10px;
+      padding: 10px;
+    }
+  
+    .admin-table {
+      width: 100%;
+    }
+  
+    .admin-table th, .admin-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Additional Responsive Design for Smaller Screens (Mobile) */
+  @media (max-width: 480px) {
+    .admin-content {
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 5px;
+    }
+  
+    .admin-table th, .admin-table td {
+      padding: 6px;
+      font-size: 12px;
+    }
+  }
+  

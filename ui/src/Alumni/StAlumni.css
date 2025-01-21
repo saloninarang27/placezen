@@ -1,0 +1,166 @@
+/* StAlumni.css */
+
+/* Ensure main content area adjusts for sidebar */
+main {
+    margin-left: 250px; /* Adjust based on sidebar width */
+    transition: margin-left 0.3s ease;
+    padding: 20px;
+  }
+  
+  /* Center the page header */
+  .page-header {
+    margin-bottom: 20px;
+    text-align: center; /* Center align the header */
+  }
+  
+  .alumni-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .alumni-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px; /* Max width of the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .alumni-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .alumni-link {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+  }
+  
+  .alumni-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .alumni-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .alumni-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .alumni-name {
+    font-size: 1.2em;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  .alumni-description {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .alumni-batch {
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1024px) {
+    main {
+      margin-left: 0; /* No margin on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .alumni-card {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .alumni-image {
+      width: 100px; /* Smaller image size */
+      height: 100px;
+    }
+  
+    .alumni-name {
+      font-size: 1em;
+    }
+  
+    .alumni-description {
+      font-size: 0.85em;
+    }
+  
+    .alumni-batch {
+      font-size: 0.85em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page-header h1 {
+      font-size: 1.5em; /* Smaller font size for very small screens */
+    }
+  
+    .alumni-card {
+      padding: 10px; /* Less padding */
+    }
+  
+    .alumni-info {
+      flex-direction: column;
+    }
+  }
+  .loader {
+    border: 16px solid #f3f3f3; /* Light grey background */
+    border-top: 16px solid #3498db; /* Blue color */
+    border-radius: 50%; /* Makes the loader circular */
+    width: 120px; /* Loader size */
+    height: 120px;
+    animation: spin 2s linear infinite; /* Animation */
+    margin: 0 auto; /* Centering the loader */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .loader {
+      width: 30px; /* Smaller loader for smaller screens */
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .loader {
+      width: 60px; /* Even smaller loader for very small screens */
+      height: 60px;
+    }
+  }  

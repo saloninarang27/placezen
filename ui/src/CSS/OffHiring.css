@@ -1,0 +1,110 @@
+#offf{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  justify-content: center;
+  /* margin-left: 35%; */
+
+}
+#off1{
+  margin-left: 25%;
+  background-color: rgb(250, 250, 250);
+  color: white;
+  font-size: 25px;
+  width: 300px;
+  margin-right: 300px;
+  text-align: center;
+  visibility: hidden;
+}
+#off2{
+  /* margin-left: 39%; */
+  background-color: green;
+  color: white;
+  position: relative;
+  height: 30px;
+  width: 100px;
+  border-radius: 10%;
+  right: -50px;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+#off2 Link{
+  text-decoration: none;
+}
+/* 
+#doremon{
+  display:-ms-flexbox;
+}
+#thisthat{
+  background-color: rgb(188, 180, 180);
+  width: 600px;
+  height: 280px;
+  margin-left: 50px;
+ 
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+  
+}
+#thisthat  h2{
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -25px;
+  padding-bottom: -40px;
+  
+} */
+
+#doremon {
+  margin-left: 20%;
+  display: flex; /* Use modern Flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-around; /* Space out items evenly */
+}
+
+#thisthat {
+  background-color: rgb(217, 212, 212);
+  width: calc(420px - 60px); /* Adjust width to fit 2 per row, accounting for margin */
+  margin: 25px 30px; /* Adjusted for demonstration; provides space around */
+  text-align: center;
+  color: black;
+}
+
+#thisthat h2 {
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  margin-top: 0; /* Remove margin-top if not needed */
+  padding: 10px 0; /* Adjust padding as needed */
+}
+#lalu{
+  text-decoration: none;
+}
+#tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+ 
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.active-tab {
+  background-color: crimson;
+  color: white;
+  border-color: crimson;
+}

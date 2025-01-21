@@ -1,0 +1,83 @@
+#aed{
+  margin-left: 40%;
+  margin-top: 1%;
+}
+
+
+/* Main form container */
+#fd {
+  max-width: 500px;
+ margin-left: 37%;
+  padding: 10px; /* Reduced padding */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #2c3e50;
+}
+
+/* Labels for form fields */
+#fd label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 12px; /* Reduced font size */
+  color: #34495e;
+}
+
+/* Input fields */
+#fd input {
+  width: 180%;
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 15px; /* Reduced margin */
+  margin-left: 50px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 12px; /* Reduced font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus styling */
+#fd input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 3px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+/* Button styling */
+#fd button {
+  width: 100%; /* Full width for small forms */
+  background-color: #27ae60;
+  color: #ffffff;
+  padding: 12px; /* Reduced padding */
+  border: none;
+  border-radius: 5px;
+  font-size: 14px; /* Reduced font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+#fd button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.02);
+}
+
+/* Spacing for breaks */
+#fd br {
+  line-height: 0.3; /* Reduced line height */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  #fd {
+    padding: 8px; /* Further reduce padding */
+  }
+
+  #fd button {
+    padding: 10px;
+    font-size: 12px; /* Smaller font size on small screens */
+  }
+}

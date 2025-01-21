@@ -1,0 +1,86 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Header Styles */
+#signup-header {
+  background-color: crimson;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Title Styles */
+#signup-title {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Form Container */
+#signup-form-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Form Section */
+.signup-form-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.signup-form-section label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.signup-form-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Button Styles */
+#signup-submit-btn {
+  width: 20%;
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #signup-form-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .signup-form-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  #signup-submit-btn {
+    width: 80%;
+  }
+}

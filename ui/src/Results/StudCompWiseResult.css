@@ -1,0 +1,109 @@
+#huh{
+  margin-left: 42%;
+  /* font-family: cursive; */
+  font-weight: 500;
+  font-size: 40px;
+  color: rgb(221, 21, 144);
+  
+}
+#huh1{
+  text-align: center;
+  /* font-family: cursive; */
+  font-weight: 500;
+  margin-left: 2%;
+  font-size: 40px;
+  color: rgb(221, 21, 144);
+}
+#cngr{
+  font-family: cursive;
+  font-weight: 5;
+  font-size: 22px;
+}
+/* Container for the details section */
+#details-container {
+  margin-left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual card container */
+.details-card-container {
+  background-color: #140e43;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 350px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Company heading */
+.details-card-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fcf7f7;
+  margin-bottom: 10px;
+}
+
+/* Congrats text */
+.details-card-congrats {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Student image */
+.details-card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Student name */
+.details-card-student-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f7f7f7;
+  margin-bottom: 8px;
+}
+
+/* Branch */
+.details-card-branch {
+  font-size: 1rem;
+  color: #f3eeee;
+  margin-bottom: 8px;
+}
+
+/* Session details */
+.details-card-session {
+  font-size: 1rem;
+  color: #fcf7f7;
+  margin-bottom: 15px;
+}
+
+/* CTC display */
+.details-card-ctc {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(53, 220, 20);
+  margin-bottom: 10px;
+}
+
+/* Role */
+.details-card-role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f8f3f3;
+}

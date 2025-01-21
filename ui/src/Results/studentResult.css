@@ -1,0 +1,144 @@
+/* Global Styles */
+/* body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+} */
+
+/* Content Styles */
+.student-main-content {
+  padding: 20px;
+  margin-left: 350px; /* Sidebar width */
+  margin-right: 20px; /* Right margin for larger screens */
+  transition: margin-left 0.3s ease, margin-right 0.3s ease;
+}
+
+.student-main-content-with-sidebar {
+  margin-left: 250px;
+}
+
+.student-search-container {
+  display: flex;
+  gap: 15px; /* Increased space between input field and button */
+  margin-bottom: 20px;
+}
+
+.student-search-input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.student-search-button {
+  padding: 12px 20px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.student-search-button:hover {
+  background-color: #16a085;
+}
+
+.student-result-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Space between cards */
+}
+
+.student-card {
+  background-color: #192f50;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 40px); /* Adjusted width for larger screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.student-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.student-company-heading {
+  margin: 0;
+  font-size: 24px; /* Increased font size for larger screens */
+  color: #f7f0f0;
+}
+
+.student-name, .student-branch {
+  margin: 8px 0;
+  font-size: 20px; /* Increased font size for larger screens */
+  color:white
+}
+
+.student-session, .student-ctc, .student-role {
+  margin: 8px 0;
+}
+
+.student-ctc {
+  font-size: 28px; /* Increased font size for larger screens */
+  font-weight: 700;
+  color: crimson;
+}
+
+/* Responsive Design for Screens 768px and smaller */
+@media (max-width: 768px) {
+  .student-main-content {
+    margin-left: 0;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .student-search-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .student-search-input, .student-search-button {
+    width: 100%;
+  }
+
+  .student-card {
+    padding: 15px;
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .student-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Additional Responsive Design for Smaller Screens (Mobile) */
+@media (max-width: 480px) {
+  .student-main-content {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+  .student-card {
+    padding: 8px;
+    width: 900%;
+  }
+
+  .student-card img {
+    width: 60px;
+    height: 60px;
+  }
+}

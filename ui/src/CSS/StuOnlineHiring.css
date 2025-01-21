@@ -1,0 +1,211 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Content Styles */
+.stu-online-hiring-content {
+  padding: 20px;
+  margin-left: 280px; /* Sidebar width */
+  margin-right: 20px; /* Right margin for larger screens */
+  transition: margin-left 0.3s ease, margin-right 0.3s ease;
+}
+
+.stu-online-hiring-with-sidebar + .stu-online-hiring-content {
+  margin-left: 250px; /* Adjust as needed */
+}
+
+.stu-online-hiring-content-without-sidebar + .stu-online-hiring-content {
+  margin-left: 0;
+}
+
+.stu-online-hiring-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.stu-online-hiring-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.stu-online-hiring-job-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.stu-online-hiring-job-card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.stu-online-hiring-job-card h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.stu-online-hiring-job-card h4 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.stu-online-hiring-job-card a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+.stu-online-hiring-job-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Screens 768px and smaller */
+@media (max-width: 768px) {
+  .stu-online-hiring-content {
+    margin-left: 0;
+    margin-right: 10px; /* Adjusted right margin for smaller screens */
+    padding: 10px;
+  }
+
+  .stu-online-hiring-main-content {
+    padding: 10px;
+  }
+
+  .stu-online-hiring-job-card {
+    padding: 15px;
+  }
+
+  .stu-online-hiring-job-card h2 {
+    font-size: 20px;
+  }
+
+  .stu-online-hiring-job-card h4 {
+    font-size: 16px;
+  }
+}
+
+/* Additional Responsive Design for Smaller Screens (Mobile) */
+@media (max-width: 480px) {
+  .stu-online-hiring-content {
+    margin-left: 5px; /* Added left margin for mobile devices */
+    margin-right: 25px; /* Added right margin for mobile devices */
+    padding: 5px;
+  }
+
+  .stu-online-hiring-main-content {
+    padding: 5px;
+  }
+
+  .stu-online-hiring-job-card {
+    padding: 10px;
+  }
+
+  .stu-online-hiring-job-card h2 {
+    font-size: 18px;
+  }
+
+  .stu-online-hiring-job-card h4 {
+    font-size: 14px;
+  }
+}
+#main-content {
+  width: 600px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#content-container {
+ 
+  margin-left: 38%; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  /* width: 180%; */
+}
+
+#add-more-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+#add-link {
+  font-size: 18px;
+  color: #007BFF;
+  text-decoration: none;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#add-link:hover {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+#job-list-section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* This ensures that the cards will fit into the available space, adjust min-width as needed */
+  grid-auto-rows: minmax(200px, auto);
+}
+
+[id^="job-card-"] {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+[id^="job-card-"]:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+[id^="company-name-"] {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+[id^="role-"] {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+[id^="apply-link-"] a {
+  color: #007BFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+[id^="apply-link-"] a:hover {
+  text-decoration: underline;
+}
+
+#no-job-listings {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}

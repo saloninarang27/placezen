@@ -1,0 +1,75 @@
+#test-table-xls-button {
+    margin-top: 30px;
+    margin-left: 50%;
+    background-color: #09832d; /* Blue background */
+    color: #ffffff; /* White text */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px 20px; /* Add padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #test-table-xls-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+  }
+  
+  #test-table-xls-button:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+  }
+  
+  .ccc {
+    display: inline-block; /* Center the button */
+    margin: 10px 0; /* Margin for spacing */
+  }
+  
+  .ccc::before {
+    content: '\1F4C8'; /* Optional: adds an Excel icon */
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+#mySidebar {
+    background-color: #0d2339; /* Blue background */
+    color: white; /* White text color */
+    padding: 20px;
+    width: 250px; /* Adjust the width as needed */
+    position: fixed; /* Make the sidebar fixed */
+    height: 100%; /* Full-height */
+    overflow: auto; /* Add scroll if content overflows */
+  }
+  
+  #mySidebar .s1, #mySidebar .s2 {
+    display: block;
+    padding: 10px;
+    color: white; /* Ensure text is white */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 18px; /* Adjust font size */
+  }
+  
+  #mySidebar .s1:hover, #mySidebar .s2:hover {
+    background-color: #00509e; /* Lighter blue on hover */
+    border-radius: 5px; /* Rounded corners for hover */
+  }
+  #mySidebar .s1, #mySidebar .s2 {
+    display: block;
+    padding: 10px;
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 18px; /* Adjust font size */
+    border-bottom: 1px solid #ffffff; /* White border after each item */
+  }
+  
+  #mySidebar .s1:hover, #mySidebar .s2:hover {
+    background-color: #00509e; /* Lighter blue on hover */
+    border-radius: 5px; /* Rounded corners for hover */
+  }
+  #mySidebar .s1, #mySidebar .s2 {
+    margin-bottom: 5px; /* Space between items */
+  }
+ 

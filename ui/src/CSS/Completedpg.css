@@ -1,0 +1,108 @@
+.completed-page {
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .students-container {
+    margin-left: 28%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .student-card {
+    background-color: #00274d; /* Dark background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-header {
+    
+    padding: 10px;
+  }
+  
+  .company-name {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  
+  .student-details {
+    padding: 15px;
+  }
+  
+  .student-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid #ffffff; /* White border around photo */
+  }
+  
+  .student-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .student-branch,
+  .student-session,
+  .student-role {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .student-ctc {
+    color: #ff5c5c; /* Red color for emphasis */
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 1.1rem;
+  }
+  
+  .no-student-data {
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .students-container{
+        margin-left: 5%;
+    }
+    .student-card {
+      width: 100%;
+      max-width: 500px;
+     
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .student-card {
+      padding: 10px;
+    }
+  
+    .card-header {
+      font-size: 1.2rem;
+    }
+  
+    .student-name {
+      font-size: 1rem;
+    }
+  }
+  

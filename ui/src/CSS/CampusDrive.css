@@ -1,0 +1,120 @@
+.campus-drive-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.campus-drive-content {
+  margin-left: 290px; /* Adjust the value to add space between sidebar and content */
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.campus-drive-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.campus-drive-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the items */
+}
+
+.campus-drive-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  max-width: 300px;
+}
+
+.campus-drive-item {
+  background-color: #d8ebfd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.campus-drive-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.no-data-message {
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Responsive Design for Screens 768px and smaller */
+@media (max-width: 768px) {
+  .campus-drive-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .campus-drive-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .campus-drive-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .campus-drive-link {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .campus-drive-item {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+
+.campus-drive-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.campus-drive-tab {
+  padding: 12px 25px;
+  margin: 0 15px;
+  background: linear-gradient(135deg, #6a11cb, #185506); /* Gradient background */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.campus-drive-tab.active {
+  background: linear-gradient(135deg, #2575fc, #1d1877); /* Slightly reversed gradient */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.campus-drive-tab:hover {
+  background: linear-gradient(135deg, #5a10bb, #1e65ec); /* Darker hover gradient */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.campus-drive-tab:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.5);
+}

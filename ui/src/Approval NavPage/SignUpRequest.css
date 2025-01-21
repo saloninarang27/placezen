@@ -1,0 +1,13 @@
+#navbar1{
+  display: flex;
+  background-color: black;
+  color: whitesmoke;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 35px;
+  font-size: 20px;
+}
+#navbox1,#navbox2,#navbox3,#navbox4,#navbox5{
+  padding-top: 1px;
+
+}

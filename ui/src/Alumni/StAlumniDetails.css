@@ -1,0 +1,81 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Content Styles */
+.mm {
+    padding: 20px;
+    margin-left:10%; 
+    /* Reset margin-left */
+    transition: margin-left 0.3s ease;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+}
+
+.profile-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Maximum width of the card */
+    width: 100%; /* Card width will be 100% of its container */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    max-width: 100px; /* Limit avatar size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.profile-info, .contact-info {
+    margin-top: 20px;
+}
+
+.profile-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.profile-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.profile-value {
+    color: #333;
+}
+
+/* Responsive Design for Screens 768px and smaller */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .profile-card {
+        padding: 15px;
+    }
+}
+
+/* Additional Responsive Design for Smaller Screens (Mobile) */
+@media (max-width: 480px) {
+    main {
+        padding: 5px;
+        margin-right: 10%;
+    }
+
+    .profile-card {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,85 @@
+/* Ensure container and main-content class names are properly used */
+
+.container {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Sidebar width */
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .sidebar-open + .main-content {
+    margin-left: 250px; /* Adjust as needed */
+  }
+  
+  .sidebar-closed + .main-content {
+    margin-left: 0;
+  }
+  
+  .page-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    width: 100%; /* Ensure the wrapper takes full width */
+  }
+  
+  .material-table {
+    width: 100%; /* Make the table wider than its container */
+    max-width: none; /* Remove any maximum width constraints */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .material-table th, .material-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .material-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .download-btn {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .download-btn:hover {
+    background-color: darkgreen;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 0;
+      padding: 10px;
+    }
+  
+    .material-table {
+      font-size: 14px;
+      width: 100%; /* Ensure table fits smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .material-table {
+      font-size: 12px;
+      width: 100%; /* Ensure table fits smaller screens */
+    }
+  
+    .download-btn {
+      padding: 8px 16px;
+    }
+  }
+  

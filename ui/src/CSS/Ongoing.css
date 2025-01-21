@@ -1,0 +1,30 @@
+
+#studentTable {
+    margin-left: 24%;
+    width: 70%;
+    /* margin: 20px auto; */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  #studentTable th {
+    background-color: rgb(10, 27, 65);
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #studentTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #studentTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #studentTable tr:hover {
+    background-color: #ddd;
+  }
+  

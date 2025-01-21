@@ -1,0 +1,55 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main Content Styles */
+#main-content {
+  width: 75%;
+  padding: 20px;
+  margin-left: 20%; /* Adjust as needed based on sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+#page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Image Container Styles */
+#image-container {
+  text-align: center;
+}
+
+#recruiter-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Design for Screens 768px and smaller */
+@media (max-width: 768px) {
+  #main-content {
+      margin-left: 7%; /* Ensure no margin on small screens */
+      /* padding: 10px; */
+  }
+}
+
+/* Additional Responsive Design for Smaller Screens (Mobile) */
+@media (max-width: 480px) {
+  #main-content {
+      padding: 5px;
+    
+  }
+  
+#recruiter-image {
+  width: 100%;
+  height: 60rem;
+}
+
+}
